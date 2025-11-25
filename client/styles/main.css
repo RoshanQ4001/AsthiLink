@@ -1,0 +1,73 @@
+/* main.css — custom styles for AesthiLink landing and animations */
+:root{
+  --primary:#B18CFF;
+  --accent:#D7C4FF;
+  --muted:#EAEAEA;
+  --text:#4B3E91;
+  --bg1: linear-gradient(135deg,#F8D7E8,#D7C4FF);
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* header */
+nav img.logo{width:44px;height:44px;}
+
+/* hero */
+.hero-cta{
+  transform:translateY(0);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+.hero-cta:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 40px rgba(81,46,174,0.12);
+}
+
+/* cards */
+.round-card{
+  border-radius:20px;
+  box-shadow:0 8px 30px rgba(17,17,17,0.06);
+}
+
+/* form */
+.input-pill{
+  border-radius:14px;
+  border:1px solid #E9E9F5;
+  padding:.9rem 1rem;
+  background:white;
+}
+
+/* small helpers */
+.centered{
+  margin-left:auto;margin-right:auto;
+}
+
+/* animations */
+.fade-in{
+  opacity:0;
+  transform:translateY(14px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.fade-in.visible{
+  opacity:1;
+  transform:none;
+}
+
+/* floating spark animation target */
+.spark-float{
+  animation:float 4s ease-in-out infinite;
+}
+@keyframes float{
+  0%{ transform:translateY(0) rotate(-1deg);}
+  50%{ transform:translateY(-10px) rotate(1deg);}
+  100%{ transform:translateY(0) rotate(-1deg);}
+}
+
+/* small responsive tweaks */
+@media (max-width:768px){
+  .hero-cta{ width:100% !important; }
+}
