@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AesthiLink — Dashboard</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body class="min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="max-w-5xl mx-auto p-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="./assets/spark.png" alt="AesthiLink" class="w-12 h-12">
+      <div>
+        <h1 class="text-2xl font-bold text-[#4B3E91]">AesthiLink</h1>
+        <div class="text-sm text-[#6C5EA8]">Your pastel bio pages dashboard</div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <button id="quickCreate" class="px-4 py-2 rounded-lg bg-[#B18CFF] text-white font-semibold shadow">
+        Create New
+      </button>
+      <img id="userAvatar" src="./assets/avatar.png" class="w-10 h-10 rounded-full border-2 border-white shadow cursor-pointer" />
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <main class="max-w-5xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1 p-4 rounded-2xl bg-white/60 backdrop-blur-sm border border-[#F0E8FF]">
+      <h3 class="text-[#4B3E91] font-semibold mb-2">Dashboard</h3>
+      <p class="text-sm text-[#6C5EA8]">
+        Manage your published or draft pages.  
+        Click <span class="font-semibold">Create New</span> to begin.
+      </p>
+
+      <div class="mt-6">
+        <div class="text-xs text-[#9B88C9] mb-2">Quick Links</div>
+        <nav class="flex flex-col gap-2">
+          <a href="templates.html" class="px-3 py-2 rounded-lg bg-white border text-sm">Browse Templates</a>
+          <a href="editor.html" class="px-3 py-2 rounded-lg bg-white border text-sm">Open Editor</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Pages Grid -->
+    <section class="lg:col-span-3">
+      <div id="pagesGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="hidden mt-8 p-8 rounded-2xl bg-white/60 border border-dashed border-[#EDE9FF] text-center">
+        <h3 class="text-lg font-semibold text-[#4B3E91]">No pages yet</h3>
+        <p class="text-sm text-[#6C5EA8] mt-2">Create your first aesthetic bio page.</p>
+
+        <div class="mt-4 flex justify-center gap-3">
+          <button id="createFromTemplate" class="px-4 py-2 bg-[#B18CFF] text-white rounded-lg">Choose Template</button>
+          <button id="createQuick" class="px-4 py-2 bg-white border rounded-lg">Quick Create</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Delete Confirmation Modal -->
+  <div id="confirmModal" class="fixed inset-0 hidden items-center justify-center bg-black/40">
+    <div class="bg-white rounded-xl p-6 w-96">
+      <h4 class="font-semibold text-[#4B3E91]">Delete page?</h4>
+      <p class="text-sm text-[#6C5EA8] mt-2">
+        This action will permanently remove this page.
+      </p>
+
+      <div class="mt-4 flex justify-end gap-2">
+        <button id="cancelDelete" class="px-3 py-1 rounded-lg border">Cancel</button>
+        <button id="confirmDeleteBtn" class="px-3 py-1 rounded-lg bg-[#FF8FB0] text-white">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="templates.js"></script>
+  <script src="gallery.js"></script>
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
