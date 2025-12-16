@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AesthiLink - Create cute aesthetic bio pages and mini websites for creators. Pastel link-in-bio builder with kawaii templates. Perfect alternative to Linktree for Gen-Z.">
+    <meta name="keywords" content="cute aesthetic bio page, pastel link in bio, kawaii website, aesthetic linktree alternative, cute website builder, aesthetic bio link">
+    <meta name="author" content="AesthiLink">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AesthiLink - Cute Aesthetic Bio Pages ✨">
+    <meta property="og:description" content="The cutest pastel link-in-bio and mini website builder for creators">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aesthilink.com">
+    <meta property="og:image" content="https://aesthilink.com/assets/og-image.png">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AesthiLink - Cute Aesthetic Bio Pages ✨">
+    <meta name="twitter:description" content="The cutest pastel link-in-bio and mini website builder for creators">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aesthilink.com">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Frontend/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/mascot-spark.svg">
+    
+    <title>AesthiLink - Create Cute Aesthetic Bio Pages ✨</title>
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-pink-100">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-pink-300 to-purple-300 rounded-full"></div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">AesthiLink</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#templates" class="text-gray-600 hover:text-pink-400 transition">Templates</a>
+                    <a href="#features" class="text-gray-600 hover:text-pink-400 transition">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-pink-400 transition">Pricing</a>
+                    <a href="#about" class="text-gray-600 hover:text-pink-400 transition">About</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="./login.html" class="text-pink-500 hover:text-pink-600 transition">Log in</a>
+                    <a href="./signup.html" class="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-5 py-2 rounded-full hover:shadow-lg transition">Start Free</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1️⃣ HERO SECTION -->
+        <section class="container mx-auto px-4 py-16 md:py-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Spark Mascot -->
+                <div class="flex justify-center mb-6">
+                    <div class="relative">
+                        <div class="w-20 h-20 bg-gradient-to-br from-pink-300 via-purple-300 to-blue-300 rounded-3xl rotate-45"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-4xl text-white rotate-[-45deg]">✨</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Create Cute Aesthetic Bio Pages 
+                    <span class="block mt-2 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">✨</span>
+                </h1>
+                
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    The cutest pastel link-in-bio and mini website builder for creators
+                </h2>
+                
+                <p class="text-gray-500 mb-10 max-w-2xl mx-auto">
+                    Create beautiful pastel templates that match your aesthetic identity. Showcase your portfolio, 
+                    add products and accept payments—no design or coding required. Perfect for Gen-Z creators 
+                    who want their bio link to be as unique as they are.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="./signup.html" class="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-8 py-3 rounded-full text-lg font-semibold hover:shadow-xl transition shadow-lg">Start Free</a>
+                    <a href="#templates" class="bg-white text-pink-500 border-2 border-pink-200 px-8 py-3 rounded-full text-lg font-semibold hover:bg-pink-50 transition">Browse Templates</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2️⃣ TRUST & VALUE SECTION -->
+        <section class="bg-gradient-to-r from-pink-50/50 to-purple-50/50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                        Why settle for boring bio links?
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-8 border border-pink-100">
+                            <div class="text-4xl mb-4">🌱</div>
+                            <h3 class="text-xl font-semibold mb-3">Instagram bio links are boring</h3>
+                            <p class="text-gray-600">
+                                Generic links don't match your vibe. AesthiLink turns your bio link into a 
+                                cute extension of your personality.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-8 border border-purple-100">
+                            <div class="text-4xl mb-4">🎨</div>
+                            <h3 class="text-xl font-semibold mb-3">Your aesthetic, your vibe, your page</h3>
+                            <p class="text-gray-600">
+                                Every color, font, and element reflects your unique style. Make your bio link 
+                                as special as your content.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-12">
+                        <p class="text-xl text-gray-700">
+                            "Turn your Instagram bio into a cute website that actually feels like you"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3️⃣ FEATURES SECTION -->
+        <section id="features" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Everything you need to shine ✨
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-3xl p-6 border border-pink-100 hover:border-pink-300 transition">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-200 to-pink-300 rounded-2xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🎀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pastel & Kawaii Templates</h3>
+                    <p class="text-gray-600">
+                        18+ cute templates with soft gradients, glass effects, and adorable elements.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-3xl p-6 border border-purple-100 hover:border-purple-300 transition">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-200 to-purple-300 rounded-2xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🖼️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Portfolio & Project Uploads</h3>
+                    <p class="text-gray-600">
+                        Showcase your work beautifully with image galleries and project descriptions.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-3xl p-6 border border-blue-100 hover:border-blue-300 transition">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">🛍️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Product Links & Ordering</h3>
+                    <p class="text-gray-600">
+                        Add products, digital downloads, or services with easy ordering systems.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-3xl p-6 border border-pink-100 hover:border-pink-300 transition">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-200 to-pink-300 rounded-2xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">💳</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Payments (Stripe / Razorpay)</h3>
+                    <p class="text-gray-600">
+                        Accept payments securely for products, tips, or digital content.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-3xl p-6 border border-purple-100 hover:border-purple-300 transition">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-200 to-purple-300 rounded-2xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Mobile-Optimized Pages</h3>
+                    <p class="text-gray-600">
+                        Your page looks perfect on every device—phone, tablet, or desktop.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-3xl p-6 border border-blue-100 hover:border-blue-300 transition">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl flex items-center justify-center mb-4">
+                        <span class="text-2xl">✨</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Links & Sections</h3>
+                    <p class="text-gray-600">
+                        Add unlimited links, organize them in cute sections, and track clicks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4️⃣ TEMPLATE SHOWCASE -->
+        <section id="templates" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Pastel Aesthetic Templates
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Choose from 18+ cute website templates with styles like kawaii, minimal, and glassmorphism. 
+                All optimized for mobile creators who want their aesthetic bio pages to stand out.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Template 1 -->
+                <div class="bg-gradient-to-br from-pink-100 to-pink-50 rounded-3xl p-6">
+                    <div class="h-48 bg-gradient-to-br from-pink-300 to-pink-200 rounded-2xl mb-4"></div>
+                    <h3 class="font-semibold text-lg mb-2">Pastel Dreams</h3>
+                    <p class="text-gray-600 text-sm">Soft pink gradient with cute sparkle effects</p>
+                </div>
+                
+                <!-- Template 2 -->
+                <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-3xl p-6">
+                    <div class="h-48 bg-gradient-to-br from-purple-300 to-purple-200 rounded-2xl mb-4"></div>
+                    <h3 class="font-semibold text-lg mb-2">Lavender Bloom</h3>
+                    <p class="text-gray-600 text-sm">Glassmorphism design with floral accents</p>
+                </div>
+                
+                <!-- Template 3 -->
+                <div class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-6">
+                    <div class="h-48 bg-gradient-to-br from-blue-300 to-blue-200 rounded-2xl mb-4"></div>
+                    <h3 class="font-semibold text-lg mb-2">Baby Blue</h3>
+                    <p class="text-gray-600 text-sm">Minimal kawaii aesthetic with rounded corners</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5️⃣ WHO IS THIS FOR -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Perfect for creative souls like you 💖
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 text-center">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="font-semibold text-lg mb-2">Artists</h3>
+                    <p class="text-gray-600 text-sm">Showcase your art in a gallery that matches your style</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 text-center">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="font-semibold text-lg mb-2">Influencers</h3>
+                    <p class="text-gray-600 text-sm">Link all your content with your unique aesthetic</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 text-center">
+                    <div class="text-4xl mb-4">💼</div>
+                    <h3 class="font-semibold text-lg mb-2">Freelancers</h3>
+                    <p class="text-gray-600 text-sm">Professional yet cute portfolio to attract clients</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 text-center">
+                    <div class="text-4xl mb-4">🛍️</div>
+                    <h3 class="font-semibold text-lg mb-2">Small Shops</h3>
+                    <p class="text-gray-600 text-sm">Sell products with an adorable storefront</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6️⃣ ABOUT SECTION -->
+        <section id="about" class="bg-gradient-to-r from-pink-50/50 to-blue-50/50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">About AesthiLink</h2>
+                    
+                    <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-8">
+                        <p class="text-gray-700 mb-4">
+                            Our mission is simple: help creators express their unique identity through 
+                            beautiful, aesthetic design. We believe your online presence should feel 
+                            as special as you are.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Born from the pastel culture and Gen-Z's love for self-expression, 
+                            AesthiLink is more than just a link-in-bio tool. It's a space where 
+                            creativity meets cuteness, where functionality doesn't sacrifice style.
+                        </p>
+                        <p class="text-gray-700">
+                            Unlike generic tools, we focus on the aesthetic details—every gradient, 
+                            every rounded corner, every sparkle effect is designed to help you 
+                            create a page that's uniquely yours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7️⃣ PRICING SECTION -->
+        <section id="pricing" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Simple, transparent pricing
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 border-2 border-pink-200">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Free Plan</h3>
+                        <div class="text-4xl font-bold text-pink-500">$0<span class="text-lg text-gray-500">/forever</span></div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>1 aesthetic page</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic pastel templates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Up to 10 links</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic analytics</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="./signup.html" class="block w-full bg-white text-pink-500 border-2 border-pink-300 text-center py-3 rounded-full font-semibold hover:bg-pink-50 transition">Get Started Free</a>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 border-2 border-purple-300 relative">
+                    <div class="absolute top-0 right-0 bg-gradient-to-r from-purple-400 to-pink-400 text-white px-4 py-1 rounded-bl-2xl rounded-tr-3xl text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Pro Plan</h3>
+                        <div class="text-4xl font-bold text-purple-600">$9<span class="text-lg text-gray-500">/month</span></div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Unlimited pages</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>All premium templates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Portfolio uploads</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Product & payment features</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Custom domains</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="./signup.html" class="block w-full bg-gradient-to-r from-purple-400 to-pink-400 text-white text-center py-3 rounded-full font-semibold hover:shadow-lg transition">Go Pro ✨</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8️⃣ FAQ SECTION -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Frequently Asked Questions
+            </h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-pink-100">
+                    <h3 class="font-semibold text-lg mb-2">What is AesthiLink?</h3>
+                    <p class="text-gray-600">
+                        AesthiLink is a cute aesthetic bio page and mini website builder designed for creators. 
+                        It helps you create beautiful pastel pages to link all your content, showcase your portfolio, 
+                        and even sell products—all with a cute, kawaii aesthetic.
+                    </p>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-purple-100">
+                    <h3 class="font-semibold text-lg mb-2">Is AesthiLink free?</h3>
+                    <p class="text-gray-600">
+                        Yes! We have a free forever plan that includes 1 page with basic templates. 
+                        Our Pro plan unlocks all premium features for $9/month.
+                    </p>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-blue-100">
+                    <h3 class="font-semibold text-lg mb-2">Is this better than Linktree?</h3>
+                    <p class="text-gray-600">
+                        While Linktree is functional, AesthiLink focuses on aesthetics and self-expression. 
+                        If you want your bio link to reflect your unique style with pastel colors, cute elements, 
+                        and a kawaii vibe, then yes—it's better for creative souls!
+                    </p>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-pink-100">
+                    <h3 class="font-semibold text-lg mb-2">Can I accept payments?</h3>
+                    <p class="text-gray-600">
+                        Yes! With our Pro plan, you can connect Stripe or Razorpay to accept payments 
+                        for products, digital downloads, tips, or services directly on your page.
+                    </p>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-2xl p-6 border border-purple-100">
+                    <h3 class="font-semibold text-lg mb-2">Do I need design skills?</h3>
+                    <p class="text-gray-600">
+                        Not at all! Our templates are ready to use with drag-and-drop editing. 
+                        Just pick a pastel template you love, add your content, and you're done. 
+                        No coding or design experience needed.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9️⃣ FOOTER -->
+    <footer class="bg-gradient-to-r from-pink-50 to-purple-50 border-t border-pink-100">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-pink-300 to-purple-300 rounded-full"></div>
+                        <span class="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">AesthiLink</span>
+                    </div>
+                    <p class="text-gray-600 text-sm">
+                        The cutest pastel link-in-bio builder for creators who love aesthetics.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-800">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#templates" class="text-gray-600 hover:text-pink-500 transition text-sm">Templates</a></li>
+                        <li><a href="#features" class="text-gray-600 hover:text-pink-500 transition text-sm">Features</a></li>
+                        <li><a href="#pricing" class="text-gray-600 hover:text-pink-500 transition text-sm">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-800">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-600 hover:text-pink-500 transition text-sm">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-pink-500 transition text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-pink-500 transition text-sm">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-800">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:hello@aesthilink.com" class="text-gray-600 hover:text-pink-500 transition text-sm">hello@aesthilink.com</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-pink-500 transition text-sm">Instagram</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-pink-500 transition text-sm">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-pink-100 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 AesthiLink. All rights reserved. Made with 💖 for creative souls.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AesthiLink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Frontend/css/dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-mascot">💎</div>
+                <span class="logo-text gradient-text">AesthiLink</span>
+            </div>
+            <div class="header-actions">
+                <button id="createPageBtn" class="btn-primary">
+                    <span>+ Create Page</span>
+                </button>
+                <div class="user-menu">
+                    <div class="user-avatar">U</div>
+                    <button id="logoutBtn" class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header><main class="dashboard-main">
+    <div class="dashboard-container">
+        <div class="dashboard-header-section">
+            <h1>Your Pages</h1>
+            <p class="subtitle">Manage and organize your link pages</p>
+        </div>        <div id="emptyState" class="empty-state">
+            <div class="empty-icon">📄</div>
+            <h2>No pages yet</h2>
+            <p>Create your first link page to get started</p>
+            <button class="btn-create-first">Create Your First Page</button>
+        </div>        <div id="pagesGrid" class="pages-grid"></div>
+    </div>
+</main><div id="deleteModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <h3>Delete Page</h3>
+        <p>Are you sure you want to delete this page? This action cannot be undone.</p>
+        <div class="modal-actions">
+            <button id="cancelDelete" class="btn-secondary">Cancel</button>
+            <button id="confirmDelete" class="btn-danger">Delete</button>
+        </div>
+    </div>
+</div><script src="js/dashboard.js"></script>
+</body>
+</html>
