@@ -1,0 +1,73 @@
+.home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbeaff, #e8f0ff);
+  padding: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4b3c6e;
+}
+
+.nav-actions a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #4b3c6e;
+  font-weight: 500;
+}
+
+.nav-actions .primary {
+  background: #6c5ce7;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.hero {
+  max-width: 700px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #2d254a;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #5a5377;
+}
+
+.hero-actions {
+  margin-top: 32px;
+}
+
+.hero-actions a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-actions .cta {
+  background: #6c5ce7;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 999px;
+}
+
+.hero-actions .secondary {
+  color: #6c5ce7;
+}
